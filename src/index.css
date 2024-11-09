@@ -1,0 +1,186 @@
+* {
+  background-color: white;
+  color: black;
+  font-family: "Fira Code", monospace;
+}
+
+h1 {
+  font-size: 5vh;
+  margin-left: 5vh;
+}
+
+
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+
+}
+
+.content-container a {
+  margin: auto;
+}
+
+.description-container {
+  padding: 5%;
+  width: 50%;
+  border: 2px solid black;
+  box-shadow:  10px 10px black;
+}
+
+.description-container h1 {
+  margin: auto;
+  font-size: 5vh;
+}
+
+.description-container p {
+  font-size: 2vh;
+  line-height: 1.6;
+}
+
+.description-container h3 {
+  font-size: 2vh;
+
+}
+
+.education-container {
+  padding: 5%;
+  width: 50%;
+  border: 2px solid black;
+  box-shadow:  10px 10px black;
+  display: flex;
+}
+
+.education-container h1 {
+  margin-left: 0;
+}
+
+.education-description-container h3{
+  font-size: 3vh;
+}
+
+.education-container p {
+  font-size: 2vh;
+}
+
+.education-container a {
+  margin: auto;
+}
+
+
+/**
+==============================================
+                Project Styles
+==============================================
+ */
+
+.project-container {
+  margin-left: 4vh;
+  margin-right: 4vh;
+  padding: 5%;
+
+  border: 2px solid black;
+  box-shadow:  10px 10px black;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-container h1 {
+  margin-left: 0;
+}
+
+.project-container button {
+  margin: auto;
+  border: 3px solid black;
+  box-shadow:  10px 10px black;
+  padding: 0;
+}
+
+.project-container button img {
+  max-width: 70vh;
+}
+
+.project-description-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.project-description-container p {
+  margin-top: 0;
+  font-size: 2vh;
+  line-height: 1.6;
+  width: 90%;
+}
+
+.project-description-container span {
+  font-size: 2vh;
+  width: 90%;
+  font-weight: bold;
+}
+
+
+
+/**
+==============================================
+                   Effects
+==============================================
+ */
+
+.description-container:hover {
+  transform: translate(10px, 10px);
+  box-shadow: none;
+}
+
+.education-container:hover {
+  transform: translate(10px, 10px);
+  box-shadow: none;
+}
+
+.project-container:hover {
+  transform: translate(10px, 10px);
+  box-shadow: none;
+}
+
+.project-container button:hover {
+  box-shadow: none;
+  transform: translate(10px, 10px);
+}
+
+
+.pfp:hover {
+  transform: translate(10px, 10px);
+  box-shadow: none;
+}
+
+.pfp {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: auto;
+  border: 3px solid black;
+  box-shadow: 10px 10px black;
+
+}
+
+.github {
+  margin-top: 1vh;
+  padding: 0.5%;
+  width: 30vh;
+  font-size: 2vh;
+  box-shadow: 5px 5px black;
+}
+
+.github:hover {
+  cursor: pointer;
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+
+
+
+
