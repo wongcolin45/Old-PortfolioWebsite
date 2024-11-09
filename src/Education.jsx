@@ -2,25 +2,45 @@
 
 import seal from './images/seal.png';
 
+import {courses} from './ProjectInfo/projectInfo.js';
+import {useState} from 'react';
+
 function Education() {
 
-    const courses = ['Fundamentals of Computer Science I',
-                             'Fundamentals of Computer Science II',
-                             'Objected Oriented Design'];
-    const supportingCourses = ['Introduction to Mathematical Reasoning',
-                                        'Discrete Structures',
-                                        'Foundations of Cybersecurity',
-                                        'Foundations of Data Science'];
+    const [courseClicked, setCourseClicked] = useState(-1);
+
+    const handleClick = (index) => {
+        setCourseClicked(c => {
+            return (index === c) ? -1 : index;
+        });
+    }
+
+
+    function renderCourse(name, description, index) {
+        let style = {};
+        const selected = index === courseClicked;
+        if (selected) {
+            style = {boxShadow: "none", transform: "translate(7px, 7px)"}
+        }
+        return (
+            <>
+                <button key={name} onClick={() => handleClick(index)} style={style}>{name}</button>
+                {selected && <p key={index}>{description}</p>}
+            </>
+        )
+
+    }
+
 
     function renderCourses(courses) {
         return (
-            <>
+            <div className='courses-container'>
                 {
-                    courses.map((name, index) => {
-                        return <p key={name + index}>{'- '+name}</p>
-                    })
+                    Object.entries(courses).map(([key, value], index) => (
+                        renderCourse(key, value, index)
+                    ))
                 }
-            </>
+            </div>
         )
     }
 
@@ -32,8 +52,8 @@ function Education() {
                     <h3>GPA: 3.73/4.00 | Major GPA: 4.00/4.00</h3>
                     <h3>Relevant Courses:</h3>
                     {renderCourses(courses)}
-                    <h3>Supporting Courses</h3>
-                    {renderCourses(supportingCourses)}
+
+
                 </div>
                 <a href={'https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#programrequirementstext'}
                    target="_blank">

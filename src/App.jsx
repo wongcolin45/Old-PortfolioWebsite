@@ -14,7 +14,7 @@ function App() {
         <Education/>
         <h1>Personal Projects</h1>
         <ProjectsSection/>
-
+        <h1>My Current Tech Stack: SERN </h1>
     </>
   )
 }

@@ -44,6 +44,13 @@ h1 {
 
 }
 
+/**
+==============================================
+              Education Styles
+==============================================
+ */
+
+
 .education-container {
   padding: 5%;
   width: 50%;
@@ -66,6 +73,34 @@ h1 {
 
 .education-container a {
   margin: auto;
+  margin-left: 20%;
+}
+
+.courses-container {
+  margin-top: -3%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.courses-container button {
+  margin-left: 0;
+  border: 1px solid black;
+  width: 60vh;
+  font-size: 2vh;
+  padding: 2%;
+  margin-bottom: 1vh;
+  box-shadow: 7px 7px;
+  text-align: left;
+}
+
+.courses-container button:active {
+  box-shadow: none;
+  transform: translate(7px, 7px);
+}
+
+.course-container p {
+  width: 60vh;
 }
 
 
@@ -168,15 +203,14 @@ h1 {
 
 .github {
   margin-top: 1vh;
-  padding: 0.5%;
+  padding: 5%;
   width: 30vh;
-  font-size: 2vh;
-  box-shadow: 5px 5px black;
+  height: 3vh;
+
 }
 
 .github:hover {
   cursor: pointer;
-  transform: translate(5px, 5px);
   box-shadow: none;
 }
 

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import github from './images/github.png';
+
 
 function Github(props) {
     return (
