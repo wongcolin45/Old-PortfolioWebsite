@@ -1,21 +1,23 @@
-import Introduction from "./Introduction.jsx";
-import Education from "./Education.jsx";
-import Project from "./Project.jsx";
-import ProjectsSection from "./ProjectsSection.jsx";
+import IntroPage from "./IntroPage.jsx";
+
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import EducationPage from "./EducationPage.jsx";
+import ProjectsPage from "./ProjectsPage.jsx";
+
 
 
 function App() {
 
 
   return (
-    <>
-        <h1>Colin Wong | Personal Portfolio Website</h1>
-        <Introduction/>
-        <Education/>
-        <h1>Personal Projects</h1>
-        <ProjectsSection/>
-        <h1>My Current Tech Stack: SERN </h1>
-    </>
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<IntroPage/>}/>
+            <Route path="/education" element={<EducationPage/>}/>
+            <Route path="/projects" element={<ProjectsPage/>}/>
+        </Routes>
+
+    </BrowserRouter>
   )
 }
 

@@ -1,11 +1,16 @@
 
 import pfp from './images/obito.jpeg';
+import NavBar from "./NavBar.jsx";
 
 
 
-function Introduction() {
+
+
+function IntroPage() {
     return (
         <>
+            <NavBar/>
+            <h1 className="page-header">About Me</h1>
             <div className="content-container">
                 <div className="description-container">
 
@@ -21,10 +26,13 @@ function Introduction() {
                 <a href={'https://www.instagram.com/colinwong27/'} target="_blank">
                     <img className="pfp" src={pfp} alt="pfp"/>
                 </a>
+            </div>
+            <div className="links">
+
 
             </div>
         </>
     )
 }
 
-export default Introduction;
+export default IntroPage;

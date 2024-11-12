@@ -4,8 +4,9 @@ import seal from './images/seal.png';
 
 import {courses} from './ProjectInfo/projectInfo.js';
 import {useState} from 'react';
+import NavBar from "./NavBar.jsx";
 
-function Education() {
+function EducationPage() {
 
     const [courseClicked, setCourseClicked] = useState(-1);
 
@@ -14,7 +15,6 @@ function Education() {
             return (index === c) ? -1 : index;
         });
     }
-
 
     function renderCourse(name, description, index) {
         let style = {};
@@ -45,27 +45,30 @@ function Education() {
     }
 
     return (
-        <div className="content-container">
-            <div className="education-container" style={{width: "100%"}}>
-                <div className="education-description-container">
-                    <h1>Education</h1>
-                    <h3>GPA: 3.73/4.00 | Major GPA: 4.00/4.00</h3>
-                    <h3>Relevant Courses:</h3>
-                    {renderCourses(courses)}
+        <>
+            <NavBar/>
+            <h1 className="page-header">Educational Background</h1>
+            <div className="content-container">
+                <div className="education-container" style={{width: "100%"}}>
+                    <div className="education-description-container">
+                        <h1>Northeastern University</h1>
+                        <h3>BS in Computer Science | 2027</h3>
+                        <h4>GPA: 3.73/4.00 | Major GPA: 4.00/4.00</h4>
+                        <h3>Relevant Courses:</h3>
+                        {renderCourses(courses)}
 
+
+                    </div>
+                    <a href={'https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#programrequirementstext'}
+                       target="_blank">
+                        <img className='pfp' src={seal}></img>
+                    </a>
 
                 </div>
-                <a href={'https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#programrequirementstext'}
-                   target="_blank">
-                    <img className='pfp' src={seal}></img>
-                </a>
 
             </div>
-
-        </div>
-
-
+        </>
     )
 }
 
-export default Education;
+export default EducationPage;
