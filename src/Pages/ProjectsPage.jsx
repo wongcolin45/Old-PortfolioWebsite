@@ -1,6 +1,6 @@
-import Project from "./Project.jsx";
-import {planner, reactTacToe, chess, oasis} from "./ProjectInfo/projectInfo.js";
-import NavBar from "./NavBar.jsx";
+import Project from "../Components/Project.jsx";
+import {planner, reactTacToe, chess, oasis} from "../ProjectInfo/projectInfo.js";
+import NavBar from "../Components/NavBar.jsx";
 
 
 

@@ -1,7 +1,7 @@
-import NavBar from "./NavBar.jsx";
-import GoogleDocumentViewer from "./GoogleDocumentViewer.jsx";
+import NavBar from "../Components/NavBar.jsx";
+import GoogleDocumentViewer from "../Components/GoogleDocumentViewer.jsx";
 
-function Resume() {
+function ResumePage() {
 
     function downloadButton() {
         return (
@@ -26,4 +26,4 @@ function Resume() {
     )
 }
 
-export default Resume;
+export default ResumePage;

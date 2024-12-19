@@ -1,10 +1,10 @@
 
 
-import seal from './images/seal.png';
+import seal from '../images/seal.png';
 
-import {courses} from './ProjectInfo/projectInfo.js';
+import {courses} from '../ProjectInfo/projectInfo.js';
 import {useState} from 'react';
-import NavBar from "./NavBar.jsx";
+import NavBar from "../Components/NavBar.jsx";
 
 function EducationPage() {
 

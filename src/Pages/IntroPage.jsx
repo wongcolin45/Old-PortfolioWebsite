@@ -1,6 +1,6 @@
 
-import pfp from './images/obito.jpeg';
-import NavBar from "./NavBar.jsx";
+import pfp from '../images/obito.jpeg';
+import NavBar from "../Components/NavBar.jsx";
 
 
 
