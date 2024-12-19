@@ -11,7 +11,10 @@ function App() {
 
 
   return (
-    <BrowserRouter>
+    <BrowserRouter
+        future={{
+            v7_relativeSplatPath: true,
+        }}>
         <Routes>
             <Route path="/" element={<IntroPage/>}/>
             <Route path="/education" element={<EducationPage/>}/>
