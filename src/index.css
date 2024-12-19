@@ -19,6 +19,12 @@ button:hover{
 
 }
 
+/**
+==============================================
+                 Headers
+==============================================
+ */
+
 .Header {
   display: flex;
   text-align: center;
@@ -45,7 +51,6 @@ button:hover{
   transform: translate(4px, 4px);
   box-shadow: none;
 }
-
 
 
 h1 {
@@ -93,7 +98,7 @@ h1 {
 
 /**
 ==============================================
-              EducationPage Styles
+           EducationPage Styles
 ==============================================
  */
 
@@ -205,7 +210,6 @@ h1 {
 }
 
 
-
 /**
 ==============================================
                    Effects
@@ -231,7 +235,6 @@ h1 {
   box-shadow: none;
   transform: translate(8px, 9px);
 }
-
 
 .pfp:hover {
   transform: translate(10px, 10px);
@@ -262,15 +265,12 @@ h1 {
   box-shadow: none;
 }
 
-
 .links {
   margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
 
 hr {
   border: 0.5px solid whitesmoke;
@@ -284,10 +284,6 @@ hr {
 
 
 
-/**
-==============================================
-                  Ui Verse
-==============================================
- */
+
 
 
