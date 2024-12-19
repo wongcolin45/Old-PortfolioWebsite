@@ -1,5 +1,7 @@
 import ttt from '../images/ttt.png';
 import plannerImage from '../images/planner.png';
+import chessImage from '../images/ChessWebsite.png';
+import oasisImage from '../images/OasisImage.png';
 
 
 const description =
@@ -14,7 +16,7 @@ const reactTacToe =
 {
     name: "React Tac Toe",
     description: "This project is a React-based version of Tic-Tac-Toe that" +
-                 "originally started as a terminal-based game, where I" +
+                 "originally started as a terminal-based game, where I " +
                  "implemented a minimax algorithm to calculate the best possible" +
                  "move for the AI. After completing the terminal version, I" +
                  "transitioned the game to a ReactJS frontend, creating an" +
@@ -44,6 +46,44 @@ const planner =
     bigImage: true
 }
 
+const chessDescription =
+    'I developed a two-player chess game that allows both players to play on a single device. ' +
+    'The frontend is built using React, providing an intuitive and responsive interface for gameplay. ' +
+    'The backend is powered by a Spring Boot API, which efficiently handles the game logic and enforces chess rules. ' +
+    'By applying Object-Oriented Programming (OOP) principles, I ensured a modular and maintainable codebase for the game logic, ' +
+    'enabling clear separation of responsibilities, such as piece movements, game state management, and rule validations. ' +
+    'This project showcases seamless integration between frontend and backend systems for a complete gaming experience.';
+
+const chess =
+    {
+        name: "2 Player Chess Game",
+        description: chessDescription,
+        technologies: 'React, Spring Boot',
+        github: 'https://github.com/wongcolin45/Chess2Players',
+        image: chessImage,
+        link: null,
+        bigImage: true
+    }
+
+const oasisDescription =
+    'NEU Bites is a web application designed to help Northeastern University students discover ' +
+    'nearby food options through personalized dish recommendations. As the Front-End Developer, ' +
+    'I developed the React-based frontend, leveraging hooks for efficient state management and component ' +
+    'lifecycle handling. I integrated the frontend with a Flask backend via RESTful APIs, enabling seamless ' +
+    'communication between the client and server. My work focused on ensuring a smooth and responsive user ' +
+    'experience while collaborating with the team to align the frontend functionality with backend operations.';
+
+const oasis =
+    {
+        name: "NEU Bites | Oasis Club Project",
+        description: oasisDescription,
+        technologies: 'React, Flask, Supabase(Postgre SQL), AWS',
+        github: 'https://github.com/Oasis-NEU/f24-group1',
+        image: oasisImage,
+        link: null,
+        bigImage: true
+    }
+
 
 const courses = {
     "Discrete Structure": "Introduces the mathematical structures and methods that form the foundation of computer science. Studies structures such as sets, tuples, sequences, lists, trees, and graphs. Discusses functions, relations, ordering, and equivalence relations. Examines inductive and recursive definitions of structures and functions. Discusses principles of proof such as truth tables, inductive proof, and basic logic. Also covers the counting techniques and arguments needed to estimate the size of sets, the growth of functions, and the space-time complexity of algorithms.",
@@ -57,4 +97,4 @@ const courses = {
 
 
 
-export {reactTacToe, planner, courses}
+export {reactTacToe, planner, chess, courses, oasis}

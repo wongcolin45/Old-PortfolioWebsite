@@ -52,8 +52,8 @@ function EducationPage() {
                 <div className="education-container" style={{width: "100%"}}>
                     <div className="education-description-container">
                         <h1>Northeastern University</h1>
-                        <h3>BS in Computer Science | 2027</h3>
-                        <h4>GPA: 3.73/4.00 | Major GPA: 4.00/4.00</h4>
+                        <h3>BS in Computer Science | December 2027</h3>
+                        <h4>GPA: 3.80/4.00 | Major GPA: 4.00/4.00</h4>
                         <h3>Relevant Courses:</h3>
                         {renderCourses(courses)}
 

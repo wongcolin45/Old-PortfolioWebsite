@@ -28,8 +28,6 @@ function IntroPage() {
                 </a>
             </div>
             <div className="links">
-
-
             </div>
         </>
     )

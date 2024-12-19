@@ -9,8 +9,9 @@ button:hover{
 }
 
 * {
-  background-color: whitesmoke;
-  color: black;
+  background-color: #2E2E2E;
+  color: #FFFFFF;
+
   font-family: "Fira Code", monospace;
   font-family: 'Inter', Arial, sans-serif;
   font-family: 'Poppins', sans-serif;
@@ -32,14 +33,16 @@ button:hover{
   width: 30vh;
   height: 100%;
   font-size: 3vh;
+  font-weight: lighter;
   margin-right: 3vh;
   margin-left: 3vh;
-  box-shadow: 8px 8px black;
+  box-shadow: 4px 4px whitesmoke;
   padding: 0.5vh;
+  border: 0.5px solid whitesmoke;
 }
 
 .Header button:hover {
-  transform: translate(8px, 8px);
+  transform: translate(4px, 4px);
   box-shadow: none;
 }
 
@@ -69,8 +72,8 @@ h1 {
 .description-container {
   padding: 5%;
   width: 50%;
-  border: 2px solid black;
-  box-shadow:  10px 10px black;
+  border: 0.5px solid white;
+  box-shadow:  10px 10px white;
 }
 
 .description-container h1 {
@@ -98,9 +101,10 @@ h1 {
 .education-container {
   padding: 5%;
   width: 50%;
-  border: 2px solid black;
-  box-shadow:  10px 10px black;
+  border: 0.5px solid whitesmoke;
+  box-shadow:  10px 10px whitesmoke;
   display: flex;
+  margin-bottom: 5vh;
 }
 
 .education-container h1 {
@@ -129,12 +133,12 @@ h1 {
 
 .courses-container button {
   margin-left: 0;
-  border: 1px solid black;
+  border: 0.5px solid whitesmoke;
   width: 60vh;
   font-size: 2vh;
   padding: 2%;
-  margin-bottom: 1vh;
-  box-shadow: 7px 7px;
+  margin-bottom: 2vh;
+  box-shadow: 3px 3px whitesmoke;
   text-align: left;
 }
 
@@ -158,8 +162,8 @@ h1 {
   margin-left: 4vh;
   margin-right: 4vh;
   padding: 5%;
-  border: 2px solid black;
-  box-shadow:  10px 10px black;
+  border: 0.5px solid whitesmoke;
+  box-shadow:  10px 10px whitesmoke;
   display: flex;
   flex-direction: row;
 }
@@ -170,8 +174,8 @@ h1 {
 
 .project-container button {
   margin: auto;
-  border: 2px solid black;
-  box-shadow:  10px 10px black;
+  border: 0.5px solid whitesmoke;
+  box-shadow:  8px 8px whitesmoke;
   padding: 0;
 }
 
@@ -225,7 +229,7 @@ h1 {
 
 .project-container button:hover {
   box-shadow: none;
-  transform: translate(10px, 10px);
+  transform: translate(8px, 9px);
 }
 
 
@@ -240,7 +244,7 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   margin: auto;
-  border: 10px solid black;
+  border: 0.5px solid black;
   box-shadow: 10px 10px black;
 
 }
@@ -267,5 +271,23 @@ h1 {
 }
 
 
+
+hr {
+  border: 0.5px solid whitesmoke;
+  width: 100%;
+}
+
+.resume-form {
+  margin: auto;
+  border: 0.5px solid whitesmoke;
+}
+
+
+
+/**
+==============================================
+                  Ui Verse
+==============================================
+ */
 
 
