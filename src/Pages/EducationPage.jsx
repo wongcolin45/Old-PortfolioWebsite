@@ -1,5 +1,4 @@
 
-
 import seal from '../images/seal.png';
 
 import {courses} from '../ProjectInfo/projectInfo.js';
