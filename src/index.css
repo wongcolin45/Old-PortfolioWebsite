@@ -47,7 +47,6 @@ button:hover{
 }
 
 
-
 h1 {
   font-size: 5vh;
   margin-left: 5vh;
@@ -96,7 +95,6 @@ h1 {
               EducationPage Styles
 ==============================================
  */
-
 
 .education-container {
   padding: 5%;
@@ -151,7 +149,6 @@ h1 {
   width: 60vh;
 }
 
-
 /**
 ==============================================
                 Project Styles
@@ -204,7 +201,9 @@ h1 {
   font-weight: bold;
 }
 
-
+.project-links-container button{
+  margin-right: 5vh;
+}
 
 /**
 ==============================================
@@ -282,11 +281,11 @@ hr {
   border: 0.5px solid whitesmoke;
 }
 
-
-
-/**
-==============================================
-                  Ui Verse
-==============================================
- */
+.resume-page {
+  text-align: center;
+  width: 60vh;
+  zoom: 200%;
+  margin: auto;
+  margin-top: 5vh;
+}
 

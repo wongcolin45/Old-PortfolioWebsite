@@ -1,25 +1,30 @@
 import NavBar from "../Components/NavBar.jsx";
 import GoogleDocumentViewer from "../Components/GoogleDocumentViewer.jsx";
+import { Document, Page } from 'react-pdf';
+import pdfFile from '../../public/resume.pdf';
+
 
 function ResumePage() {
 
     function downloadButton() {
         return (
+            <div>
                 <a
-                    href="/ProjectInfo/resume.pdf"
+                    href="../../public/resume.pdf"
                     download="ColinWong_Resume.pdf"
                 >
                     Download
                 </a>
+            </div>
         )
     }
 
     return (
         <>
             <NavBar></NavBar>
-            <h1>Resume</h1>
-
-            <GoogleDocumentViewer></GoogleDocumentViewer>
+            <Document file={pdfFile} className={'resume-pdf'} >
+                <Page pageNumber={1} className={'resume-page'} />
+            </Document>
             {downloadButton()}
 
         </>

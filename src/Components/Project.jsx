@@ -13,6 +13,18 @@ function Project(props) {
     }
 
 
+    function tryProjectButton() {
+        const url = (props.projectLink) ? props.projectLink : 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+        return (
+            <a href={url}>
+                <button className="github">
+                    Try it Out!
+                </button>
+            </a>
+        )
+    }
+
+
     function renderContents() {
         if (imageClicked) {
             return (
@@ -28,7 +40,11 @@ function Project(props) {
                 <p>{props.info.description}</p>
                 <span>{`Technologies used: ${props.info.technologies}`}</span>
                 <br/>
-                <Github link={props.info.github}/>
+                <div className="project-links-container">
+                    <Github link={props.info.github}/>
+                    {tryProjectButton()}
+                </div>
+
             </div>
 
             <button onClick={handleClick}>
@@ -49,4 +65,5 @@ export default Project;
 
 Project.propTypes = {
     info: PropTypes.object.isRequired,
+    projectLink: PropTypes.string
 }

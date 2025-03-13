@@ -12,7 +12,7 @@ function ProjectsPage() {
         <>
             <NavBar/>
             <h1 className="page-header">What I have built...</h1>
-            <Project info={reactTacToe}/>
+            <Project info={reactTacToe} projectLink = 'https://wongcolin45.github.io/ReactTacToe/'/>
             <br></br>
             <br></br>
             <Project info={planner}/>
@@ -21,7 +21,7 @@ function ProjectsPage() {
             <Project info={chess}/>
             <br></br>
             <br></br>
-            <Project info={oasis}/>
+            <Project info={oasis} projectLink={'https://neu-bites.com'}/>
             <br></br>
 
         </>
