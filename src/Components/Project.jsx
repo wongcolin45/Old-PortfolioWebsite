@@ -15,14 +15,9 @@ function Project(props) {
 
     function tryProjectButton() {
         const url = (props.projectLink) ? props.projectLink : 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-        return (
-            <a href={url}>
-                <button className="github">
-                    Try it Out!
-                </button>
-            </a>
-        )
+        window.open(url, '_blank');
     }
+
 
 
     function renderContents() {
@@ -42,21 +37,22 @@ function Project(props) {
                 <br/>
                 <div className="project-links-container">
                     <Github link={props.info.github}/>
-                    {tryProjectButton()}
+
                 </div>
 
             </div>
+                <button onClick={tryProjectButton}>
+                    <img src={props.info.image}></img>
+                </button>
 
-            <button onClick={handleClick}>
-                <img src={props.info.image}></img>
-            </button>
+
             </>
         )
     }
 
     return (
         <div className="project-container">
-            {renderContents()}
+        {renderContents()}
         </div>
     )
 }

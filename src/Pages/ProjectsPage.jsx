@@ -15,10 +15,10 @@ function ProjectsPage() {
             <Project info={reactTacToe} projectLink = 'https://wongcolin45.github.io/ReactTacToe/'/>
             <br></br>
             <br></br>
-            <Project info={planner}/>
+            <Project info={planner} projectLink = 'https://northeastern-schedule-planner.vercel.app/'/>
             <br></br>
             <br></br>
-            <Project info={chess}/>
+            <Project info={chess} projectLink='https://chess2players.vercel.app/'/>
             <br></br>
             <br></br>
             <Project info={oasis} projectLink={'https://neu-bites.com'}/>
